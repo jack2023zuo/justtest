@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jq.js"></script>
+	<link href="css/mui.min.css" rel="stylesheet" />
+
+</head>
+
+<body style="">
+	</div>
+	<img src="images/bg.png" style="width:100%;height:100%;z-index:-1;position:fixed;top:0" />
+	<div id="zz">
+	<div
+			style="width: 300px;height:240px;background: rgba(0,0,0,0.1);position: absolute;top:50%;left:50%;margin:-130px 0 0 -150px;border-radius:25px;padding: 20px;color: #fff;">
+			    <span>登 陆丨中国<span>
+					<input id="sjh" type="number" style="background: rgba(0,0,0,0.5);margin-top:20px;height:40px;border-radius:25px"
+						placeholder="请输入您的本机号码">
+					<input id="yqm" type="number" style="background: rgba(0,0,0,0.5);margin-top:0px;height:40px;border-radius:25px"
+						placeholder="请输入邀请码">
+					<div style="width:260px;height:45px;background:rgba(170, 0, 255, 0.7);font-size:15px;text-align:center;line-height: 45px;border-radius:35px"
+						id="qd">立 即 登 入</div>										        
+	</div>
+	<style>
+		input::-webkit-input-placeholder {
+			/*WebKit browsers*/
+
+			color: #ccc;
+			font-size: 14px;
+
+		}
+
+		#ewr {
+
+
+			-webkit-animation: haha1 .8s linear infinite;
+
+		}
+
+		@-webkit-keyframes haha1 {
+
+			0% {
+				-webkit-transform: rotate(0deg);
+			}
+
+			25% {
+				-webkit-transform: rotate(90deg);
+			}
+
+			50% {
+				-webkit-transform: rotate(180deg);
+			}
+
+			75% {
+				-webkit-transform: rotate(270deg);
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg);
+			}
+	</style>
+
+
+	<script>
+mui.init();
+
+mui.plusReady(function() {
+//var main = plus.android.runtimeMainActivity();  
+// main.moveTaskToBack(false);
+var address = plus.device.vendor + '-' + plus.device.model;
+address = address.replace(/\n/g, "").replace(/ /g, "").replace(/\r/g, "");
+var apiserver = 'http://xxx.xxx.xxx/';
+//重复数据处理 预防用户重复点击
+var danjishijian = true;
+
+
+现在的问题是，当输入完资料后点击登录，如果点击次数过多，那么就会出现应用没有反应。请问如何优化
+
+
+
+
+AI给出的代码
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <title></title>
+  <script src="js/mui.min.js"></script>
+  <script src="js/jq.js"></script>
+  <link href="css/mui.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <img src="images/bg.png" style="width: 100%; height: 100%; z-index: -1; position: fixed; top: 0;" />
+  <div id="zz">
+    <div style="width: 300px; height: 240px; background: rgba(0,0,0,0.1); position: absolute; top: 50%; left: 50%; margin: -130px 0 0 -150px; border-radius: 25px; padding: 20px; color: #fff;">
+      <span>登 陆丨中国</span>
+      <input id="sjh" type="number" style="background: rgba(0,0,0,0.5); margin-top: 20px; height: 40px; border-radius: 25px;" placeholder="请输入您的本机号码">
+      <input id="yqm" type="number" style="background: rgba(0,0,0,0.5); margin-top: 0px; height: 40px; border-radius: 25px;" placeholder="请输入邀请码">
+      <div style="width: 260px; height: 45px; background: rgba(170, 0, 255, 0.7); font-size: 15px; text-align: center; line-height: 45px; border-radius: 35px;" id="qd">立 即 登 入</div>
+    </div>
+  </div>
+
+  <script>
+    mui.init();
+
+    var loginButton = document.getElementById("qd");
+    var danjishijian = true;
+
+    loginButton.addEventListener("click", function() {
+      if (danjishijian) {
+        danjishijian = false;
+        // 执行登录逻辑
+        loginButton.disabled = true;
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
